@@ -32,8 +32,6 @@ async def get_weather(city:str):
         return cached.decode()
     lat,long=await get_latlong(city)
     BASE_URL=f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={long}&appid={settings.OPEN_WEATHER_API_KEY}"
-    # response = requests.request("GET", BASE_URL)
-    # return response.json()
     logger.info(f"Getting Weather details of {city}")
     async with httpx.AsyncClient() as client:
          response = await client.get(BASE_URL)
