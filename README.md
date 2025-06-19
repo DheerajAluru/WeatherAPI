@@ -21,6 +21,7 @@ A fully async production-ready backend API built with:
 - User Registration (`/signup`)
 - Login with JWT (`/login`)
 - Logout (Token Blacklist) (`/logout`)
+- Token refresh for login
 - Fetch News (requires auth) (`/news`)
 - Fetch Weather (no auth) (`/weather`)
 - Redis-backed caching for weather API
@@ -89,6 +90,17 @@ README.md
 - [Docker Compose](https://docs.docker.com/compose/)
 
 ### 1️⃣ Clone repo
+
+## .env sample 
+
+```
+OPEN_WEATHER_API_KEY=<your_WeatherAPI_key>
+NEWS_API_KEY=<your_newsAPI_key>
+SECRET_KEY=<your_secret>
+MONGODB_URI=<your_mongodb_url>  example : localhost:27017
+REDIS_URL=<your_redis_url> example : localhost:6379/
+
+```
 
 ```bash
 git clone https://github.com/DheerajAluru/WeatherAPI.git
