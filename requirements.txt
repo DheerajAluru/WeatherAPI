@@ -1,0 +1,17 @@
+fastapi[standard]
+uvicorn 
+sqlalchemy
+bcrypt
+python-jose 
+httpx 
+pydantic_cache
+python-dotenv
+requests
+geopy
+redis
+beanie
+motor
+pydantic[email]
+passlib
+pytest 
+pytest-asyncio
