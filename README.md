@@ -97,8 +97,8 @@ README.md
 OPEN_WEATHER_API_KEY=<your_WeatherAPI_key>
 NEWS_API_KEY=<your_newsAPI_key>
 SECRET_KEY=<your_secret>
-MONGODB_URI=<your_mongodb_url>  example : localhost:27017
-REDIS_URL=<your_redis_url> example : localhost:6379/
+MONGODB_URI=<your_mongodb_url> # example : localhost:27017
+REDIS_URL=<your_redis_url> # example : localhost:6379/
 
 ```
 
